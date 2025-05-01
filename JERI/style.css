@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JERI</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #4e9f3d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #4e9f3d;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    footer {
+      background-color: #4e9f3d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* SLIDER STYLING */
+   .slider-container {
+  width: 85vmin;
+  max-width: 700px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #000; /* optional */
+}
+
+.slider-track {
+  display: flex;
+  width: 400%;
+  animation: slide 12s steps(3) infinite;
+}
+
+.slider-track img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: #000;
+}
+
+
+    @keyframes slide {
+      0%    { transform: translateX(0%); }
+      25%   { transform: translateX(0%); }
+      33.33%{ transform: translateX(-100%); }
+      58.33%{ transform: translateX(-100%); }
+      66.66%{ transform: translateX(-200%); }
+      91.66%{ transform: translateX(-200%); }
+      100%  { transform: translateX(0%); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joint Effort Rescue Initiative (JERI)</h1>
+    <p>Second Chances And Forever Homes</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <div class="slider-container">
+  <div class="slider-track">
+    <img src="pup1.jpg" alt="Puppy 1">
+    <img src="pup2.jpg" alt="Puppy 2">
+    <img src="pup3.jpg" alt="Puppy 3">
+    <img src="pup1.jpg" alt="Duplicate of Puppy 1">
+  </div>
+</div>
+
+
+    <h2>Why to adopt?</h2>
+    <pre>
+Behind every shelter door is a heart longing for
+a home, a soft bed, and someone to call their own.
+By adopting, you're not just getting a pet; 
+you're offering them a chance at a happy ending.
+    </pre>
+
+    <div>
+      <h2>Hear their stories</h2> 
+      <pre>
+Mary: Discovered by the roadside with a severe eye infection leading to vision impairment
+      Following treatment and compassionate care, she has regained her sight.
+      She loves sun bathing and chasing birds in the garden.
+              
+Luigi: Presented with significant parasitic infestation and malnourishment.
+       Through dedicated medical attention and consistent care, he has made a full recovery.
+       He now loves jumping and playing with his new friends.
+               
+Vidia: Recovered from multiple injuries sustained due to acts of superstition.
+       She lost one leg but has healed fully.
+       She developed a notable fondness for flowers, often observed stashing her favorites.
+               
+Diego: Rescued from a situation of physical abuse from dog fights, Diego exhibited signs of trauma and fear. 
+       Through patient rehabilitation he has learned to trust.
+       He loves cuddles and playing tug with puppies in particular
+      </pre>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JERI - Joint Effort Rescue Initiative. All rights reserved.</p>
+  </footer>
+</body>
+</html>
