@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Greeting Page</title>
+    <script>
+        function greetUser() {
+            const name = document.getElementById('nameInput').value;
+            document.getElementById('greeting').textContent = `Hi, ${name}!`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" placeholder="Your name">
+    <button onclick="greetUser()">Say Hi</button>
+    <p id="greeting"></p>
+</body>
+</html>
