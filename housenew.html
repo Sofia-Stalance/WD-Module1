@@ -1,16 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>House</title>
-    <style>
-        #house {
-            width: 100px; 
-            height: 100px; 
-            background-color: #ecc800;
-        }
-    </style>
+  <title>House</title>
+  <style>
+    #sun {
+      width: 120px;
+      height: 120px;
+      background-color: #ffeb3b;
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+      right: 60px;
+      box-shadow: 0 0 50px #ffee58;
+    }
+
+    #container {
+      position: absolute;
+      bottom: 60px;
+      left: 200px;
+    }
+
+    #roof {
+      width: 0;
+      height: 0;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+      border-bottom: 150px solid #1565c0;
+      position: relative;
+    }
+
+    #chimney {
+      width: 70px;
+      height: 200px;
+      background-color: #8d6e63;
+      position: relative;
+      top: 10px;
+      left: 110px;
+    }
+
+    #house {
+      width: 400px;
+      height: 300px;
+      background-color: #ffffff;
+      position: relative;
+    }
+
+    #door {
+      width: 100px;
+      height: 180px;
+      background-color: #5d4037;
+      position: relative;
+      top: 120px;
+      left: 150px;
+    }
+
+    #doorknob {
+      width: 10px;
+      height: 10px;
+      background: gold;
+      border-radius: 50%;
+      position: absolute;
+      top: 90px;
+      left: 85px;
+    }
+
+    #window {
+      width: 90px;
+      height: 90px;
+      background-color: #e3f8ff;
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+      left: -45px;
+    }
+
+    #welcome-sign {
+      position: absolute;
+      top: 80px;
+      left: 155px;
+      background-color: #f8bbd0;
+      color: #13005e;
+      padding: 5px 15px;
+      border-radius: 10px
+    }
+
+    #branch1 {
+      width: 120px;
+      height: 160px;
+      background-color: #77de51;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 200px;
+      right: 434px;
+    }
+    #branch2 {
+      width: 90px;
+      height: 100px;
+      background-color: #77de51;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 130px;
+      right: 490px;
+    }
+    #branch3 {
+      width: 90px;
+      height: 100px;
+      background-color: #77de51;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 130px;
+      right: 410px;
+    }
+    #branch4 {
+      width: 90px;
+      height: 100px;
+      background-color: #77de51;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 200px;
+      right: 490px;
+    }
+    #branch5 {
+      width: 90px;
+      height: 100px;
+      background-color: #77de51;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 200px;
+      right: 410px;
+    }
+
+    #trunk {
+      width: 50px;
+      height: 180px;
+      position:absolute;
+      background-color: #8d6e63;
+      bottom: 0px;
+      right: 465px;
+    }
+    
+  </style>
 </head>
-<body>
-    <div id="house"></div>
+<body style="background-color: #b3e5fc;">
+  <div id="scene">
+    <div id="sun"></div>
+
+    <div id="container">
+      <div id="roof">
+        <div id="chimney"></div>
+        <div id="window"></div>
+      </div>
+      <div id="house">
+        <div id="welcome-sign">Welcome!</div>
+        <div id="door">
+          <div id="doorknob"></div>
+        </div>
+      </div>
+      <div id="branch1"></div>
+      <div id="branch2"></div>
+      <div id="branch3"></div>
+      <div id="branch4"></div>
+      <div id="branch5"></div>
+      <div id="trunk"></div>
+    </div>
+  </div>
 </body>
 </html>
