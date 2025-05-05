@@ -5,17 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JERI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jerry Adoptions</h1>
-    <p>Everyone deserves a loving home</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="adopt.html">Adopt</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-    <p>c</p>
+  <header>
+    <h1>Joint Effort Rescue Initiative (JERI)</h1>
+    <p>Second Chances And Forever Homes</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <section id="contact" style="font-size:30px">
+    <h2 style="font-size:40px;" title="Form to get additional information">Contact Us</h2>
+    <p>Please fill out the form below to get in touch with us.</p>
+    <form">
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+    <br>
+
+            <label>Services Interested In:</label> <br>
+       
+                <input type="checkbox" id="grooming" name="services" value="grooming">
+                <label for="grooming">Grooming</label>
+     
+                <input type="checkbox" id="boarding" name="services" value="boarding">
+                <label for="boarding">Boarding</label>
+   
+                <input type="checkbox" id="adoption" name="services" value="adoption">
+                <label for="adoption">Adoption</label>
+             <br><br>
+        <button type="submit" style="font-size:30px">Send Message</button>
+    </form>
+</section>
     <footer>
         <p>&copy; 2025 Jerry Adoptions. All rights reserved.</p>
     </footer>
